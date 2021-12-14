@@ -1,0 +1,42 @@
+@media (max-width: 1000px) {
+  .program {
+    width: 50%;
+    margin-bottom: 10px;
+  }
+  .program-wrapper {
+    height: 810px;
+  }
+}
+/* 
+@media (max-width: 670px) {
+  .lesson {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
+  .facebook {
+    margin-bottom: 10px;
+  }
+  .instagram {
+    margin-bottom: 10px;
+  }
+  .top-wrapper {
+    text-align: center;
+    padding-top: 130px;
+  }
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .header-right {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+} */
