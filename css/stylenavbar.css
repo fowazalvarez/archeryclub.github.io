@@ -244,7 +244,7 @@ section h3 {
   height: 500px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
-  border-bottom: 1px solid;
+/*   border-bottom: 1px solid; */
 }
 
 .program img:hover {
