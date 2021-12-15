@@ -42,7 +42,7 @@ header {
   height: 69px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  position: relative;
+  position: fixed;
   z-index: 1;
 }
 
@@ -52,7 +52,7 @@ header img {
   height: 60px;
   margin-top: 3.5px;
   border-radius: 50%;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 header h2 {
@@ -276,10 +276,11 @@ section h3 {
   height: 300px;
   width: 400px;
   border: 1px solid none;
-  perspective: 1000px;
+  /* perspective: 1000px; */
   float: left;
   margin-left: 90px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .flip-box-inner {
