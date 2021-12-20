@@ -244,7 +244,7 @@ section h3 {
   height: 500px;
   padding-bottom: 80px;
   background-color: #f7f7f7;
-/*   border-bottom: 1px solid; */
+  /* border-bottom: 1px solid; */
 }
 
 .program img:hover {
@@ -259,8 +259,8 @@ section h3 {
 
 /* Fasilitas */
 .fasilitas-container {
-  background-color: rgb(236, 240, 255);
-  height: 450px;
+  background-color: rgb(238, 248, 253);
+  height: 500px;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -277,9 +277,12 @@ section h3 {
   width: 400px;
   border: 1px solid none;
   /* perspective: 1000px; */
-  float: left;
-  margin-left: 90px;
-  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin-left: 65px;
+  margin-right: auto;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -331,76 +334,137 @@ section h3 {
 
 /* Contact */
 
-.txtcontact {
+.btn-wrapper1 {
   text-align: center;
 }
 
-.contact-form {
-  margin: 0;
-  display: block;
-  width: 30%;
-  max-width: 600px;
-  background: #fafafa;
+h1 {
+  font-family: "Poppins", sans-serif, "arial";
+  font-weight: 600;
+  font-size: 72px;
+  color: rgb(22, 159, 244);
+  text-align: center;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif, "arial";
+  font-weight: 400;
+  font-size: 20px;
+  color: #9b9b9b;
+  line-height: 1.5;
+}
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
   position: relative;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 20%);
-  padding: 30px 40px;
-  box-sizing: border-box;
-  border-radius: 8px;
-  text-align: center;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .styled-input {
+    width: 100%;
+  }
+}
+
+.styled-input label {
+  color: rgb(124, 124, 124);
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide {
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #fffefe;
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
   box-shadow: 0 0 20px #6097ebb3;
-  font-family: var(--poppins);
 }
 
-.contact-form h1 {
-  margin-top: 0;
-  font-weight: 200;
-  font-family: var(--poppins);
+input:focus,
+textarea:focus {
+  outline: 0;
 }
 
-.txtb {
-  border: 1px solid gray;
-  margin: 8px 0;
-  padding: 12px 18px;
-  border-radius: 8px;
-}
-
-.txtb label {
-  display: block;
-  text-align: left;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-.txtb input,
-.txtb textarea {
-  color: #333;
+input:focus ~ span,
+textarea:focus ~ span {
   width: 100%;
-  border: none;
-  background: none;
-  outline: none;
-  font-size: 18px;
-  margin-top: 6px;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
 }
 
-.btn1 {
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  float: right;
+  padding: 7px 35px;
+  border-radius: 60px;
   display: inline-block;
-  border-radius: 20px;
-  background: #4acbf7;
-  padding: 14px 0;
+  background-color: #4b8cfb;
   color: white;
-  text-transform: uppercase;
+  font-size: 18px;
   cursor: pointer;
-  margin-top: 8px;
-  width: 100%;
-  transition: 1s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06), 0 2px 10px 0 rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
-.btn1:hover {
-  background-color: #0f81a7;
-  transform: scale(105%);
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+}
+
+input[type="checkbox"] + label {
+  color: #ccc;
+  font-style: italic;
+}
+
+input[type="checkbox"]:checked + label {
+  color: #f00;
+  font-style: normal;
 }
 
 /* Akhir dari contact */
