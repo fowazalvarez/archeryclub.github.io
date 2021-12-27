@@ -428,6 +428,40 @@ section h3 {
 
 /* Akhir dari Fasilitas */
 
+/* Sub Fasilitas */
+
+.rangecontainer {
+  /* border: solid 1px black; */
+  height: 100%;
+  background-color: rgb(224, 246, 252);
+}
+
+.rangecontainer h2 {
+  text-align: center;
+  font-size: 40px;
+  opacity: 0.6;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+
+.rangeimage {
+  /* border: solid 1px black; */
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.rangeimage img {
+  width: 600px;
+  border-radius: 5%;
+}
+
+/* Akhir dari Sub Fasilitas */
+
 /* Contact */
 
 .btn-wrapper1 {
