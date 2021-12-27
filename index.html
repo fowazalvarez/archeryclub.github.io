@@ -233,33 +233,35 @@
           >
         </div>
       </div>
+      <form name="archery-contact-form">
       <div class="row input-container">
         <div class="col-xs-12">
           <div class="styled-input wide">
-            <input type="text" required />
+            <input type="text" required name="Nama"/>
             <label>Nama</label>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="styled-input">
-            <input type="text" required />
+            <input type="text" required name="Email"/>
             <label>Email</label>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="styled-input" style="float: right">
-            <input type="text" required />
+            <input type="text" required name="Nomor" />
             <label>Nomor Telepon</label>
           </div>
         </div>
         <div class="col-xs-12">
           <div class="styled-input wide">
-            <textarea required></textarea>
+            <textarea required name="Pesan"></textarea>
             <label>Tuliskan Pesan atau Program yang ingin diikuti</label>
           </div>
         </div>
         <div class="col-xs-12">
           <div class="btn-lrg submit-btn">Kirim</div>
+        </form>
         </div>
       </div>
     </div>
@@ -270,5 +272,17 @@
       <h1>Hak Cipta &copy; 2021 Bandung Archery Club and School&trade;</h1>
     </div>
     <!-- Akhir dari Footer -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwWKvWlHwylBxfXLbAgc2ZwlYVxc0H5ej8mmYuYPP3fce_EXNM_KlCTgP16I8alSMBV0A/exec";
+      const form = document.forms["archery-contact-form"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
